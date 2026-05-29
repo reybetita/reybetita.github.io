@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rey Noel Betita — Software Developer</title>
+  <meta name="description" content="Portfolio of Rey Noel O. Betita — Software Developer specializing in building exceptional digital experiences.">
+  <meta name="author" content="Rey Noel O. Betita">
+  <meta name="keywords" content="software developer, portfolio, web development, Rey Noel Betita">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rey Noel Betita — Software Developer">
+  <meta property="og:description" content="Building exceptional digital experiences with modern technologies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://reybetita.github.io">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">&lt;Rey /&gt;</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+    <div class="hero-bg-orb orb-3"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+        <h1>
+          Hi, I'm <br>
+          <span class="gradient-text">Rey Noel Betita</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span id="typing-text"></span><span class="cursor"></span>
+        </p>
+        <p class="hero-description">
+          A passionate software developer crafting modern, high-performance applications. 
+          I turn ideas into elegant digital solutions that make a difference.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="btn-view-work">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            View My Work
+          </a>
+          <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="btn btn-outline" id="btn-github">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-inner">
+            <span>👨‍💻</span>
+          </div>
+          <div class="hero-floating-badge badge-1">
+            <span class="badge-icon">⚡</span>
+            Full-Stack Dev
+          </div>
+          <div class="hero-floating-badge badge-2">
+            <span class="badge-icon">🎯</span>
+            Problem Solver
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// About Me</p>
+        <h2 class="section-title">Get to Know Me</h2>
+        <p class="section-subtitle">Here's a snapshot of who I am and what drives my passion for technology.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-card">
+            <div class="about-code-block">
+              <span class="keyword">const</span> <span class="function">developer</span> = {<br>
+              &nbsp;&nbsp;<span class="property">name</span>: <span class="string">"Rey Noel O. Betita"</span>,<br>
+              &nbsp;&nbsp;<span class="property">title</span>: <span class="string">"Software Developer"</span>,<br>
+              &nbsp;&nbsp;<span class="property">location</span>: <span class="string">"Philippines"</span>,<br>
+              &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">"Building digital solutions"</span>,<br>
+              &nbsp;&nbsp;<span class="property">loves</span>: [<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Clean Code"</span>,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Automation"</span>,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Problem Solving"</span>,<br>
+              &nbsp;&nbsp;],<br>
+              &nbsp;&nbsp;<span class="property">available</span>: <span class="keyword">true</span>,<br>
+              };<br><br>
+              <span class="comment">// Let's build something great together!</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="about-stat">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">Curiosity</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal reveal-delay-2">
+          <h3>Building the Future, One Line at a Time</h3>
+          <p>
+            I'm <strong>Rey Noel O. Betita</strong>, a dedicated software developer from the Philippines with a deep love for building practical, user-friendly applications. I enjoy working across the entire stack — from crafting intuitive interfaces to designing robust backend logic.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring new technologies, automating workflows, or working on personal projects that solve real-world problems. I believe in clean code, continuous learning, and the power of technology to create positive impact.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">JavaScript</span>
+            <span class="about-tag">HTML & CSS</span>
+            <span class="about-tag">Python</span>
+            <span class="about-tag">Problem Solving</span>
+            <span class="about-tag">Automation</span>
+            <span class="about-tag">Full-Stack</span>
+            <span class="about-tag">Git & GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// Portfolio</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A showcase of my recent work — from help desk systems to interactive web games.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-icon">🏥</div>
+          <h3>PMNP-IS Help Center</h3>
+          <p>An integrated help center and information system designed to streamline support operations, manage inquiries, and provide a centralized knowledge base for users.</p>
+          <div class="project-tech">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>Backend</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-icon">🎮</div>
+          <h3>Claw Machine Game</h3>
+          <p>An interactive web-based claw machine game with realistic physics, animations, and engaging gameplay mechanics — playable directly in the browser.</p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>HTML5 Canvas</span>
+            <span>CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-icon">📱</div>
+          <h3>SAB App</h3>
+          <p>A purpose-built application designed to support SAB operations, featuring a clean interface and streamlined workflows for improved productivity.</p>
+          <div class="project-tech">
+            <span>Application</span>
+            <span>UI/UX</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-icon">⚙️</div>
+          <h3>PMNP Script Runner</h3>
+          <p>A developer utility tool that automates script execution for PMNP workflows — saving time and reducing manual errors through a streamlined interface.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Automation</span>
+            <span>CLI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal">
+          <div class="project-icon">🌤️</div>
+          <h3>Weather Dashboard</h3>
+          <p>A responsive weather dashboard that fetches real-time data from a weather API, displaying current conditions, forecasts, and location-based insights with a beautiful UI.</p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>REST API</span>
+            <span>CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-icon">✅</div>
+          <h3>Task Manager App</h3>
+          <p>A sleek task management application with CRUD operations, priority levels, due dates, and local storage — built to demonstrate clean architecture and state management.</p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// Tech Stack</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Tools and languages I work with to bring ideas to life.</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Frontend -->
+        <div class="skill-category reveal">
+          <div class="skill-category-icon">🎨</div>
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>HTML5</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>CSS3 / SASS</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>JavaScript</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>Responsive Design</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="90%"></div></div>
+          </div>
+        </div>
+
+        <!-- Backend & Tools -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-icon">⚙️</div>
+          <h3>Backend & Tools</h3>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>Python</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>Node.js</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>Git & GitHub</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>REST APIs</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="78%"></div></div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-icon">🧠</div>
+          <h3>Other</h3>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>Problem Solving</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="92%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>Automation</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>UI/UX Design</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name"><span class="skill-dot"></span>Team Collaboration</span>
+            <div class="skill-level"><div class="skill-level-fill" data-width="90%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// Get in Touch</p>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!</p>
+
+          <div class="contact-links">
+            <a href="mailto:reybetita@gmail.com" class="contact-link-item" id="contact-email">
+              <div class="contact-link-icon">📧</div>
+              <div class="contact-link-text">
+                <div class="link-label">Email</div>
+                <div class="link-value">reybetita@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="contact-link-item" id="contact-github">
+              <div class="contact-link-icon">💻</div>
+              <div class="contact-link-text">
+                <div class="link-label">GitHub</div>
+                <div class="link-value">github.com/reybetita</div>
+              </div>
+            </a>
+            <a href="#" class="contact-link-item" id="contact-location">
+              <div class="contact-link-icon">📍</div>
+              <div class="contact-link-text">
+                <div class="link-label">Location</div>
+                <div class="link-value">Philippines</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-2" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="btn-send-message">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2026 Rey Noel Betita. Built with ❤️ and JavaScript.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub" id="footer-github">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:reybetita@gmail.com" class="footer-social-link" aria-label="Email" id="footer-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
