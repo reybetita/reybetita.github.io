@@ -9,9 +9,14 @@ const typingTexts = [
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const typingElement = document.getElementById('typing-text');
+let typingElement = null;
 
 function typeEffect() {
+  if (!typingElement) {
+    typingElement = document.getElementById('typing-text');
+  }
+  if (!typingElement) return;
+
   const currentText = typingTexts[textIndex];
 
   if (isDeleting) {
@@ -35,10 +40,6 @@ function typeEffect() {
 
   setTimeout(typeEffect, speed);
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  typeEffect();
-});
 
 // ===== NAVBAR SCROLL EFFECT =====
 const navbar = document.getElementById('navbar');
@@ -230,7 +231,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // ===== PROJECT CAROUSELS =====
-document.addEventListener('DOMContentLoaded', () => {
+function initCarousels() {
   const projectCards = document.querySelectorAll('.project-card');
 
   projectCards.forEach((card) => {
@@ -289,4 +290,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-});
+}
+
+// ===== INITIALIZATION =====
+function init() {
+  typeEffect();
+  initCarousels();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
