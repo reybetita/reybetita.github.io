@@ -122,23 +122,7 @@ const skillObserver = new IntersectionObserver(
 
 skillFills.forEach((fill) => skillObserver.observe(fill));
 
-// ===== CONTACT FORM =====
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  // Build mailto link as a simple handler (no backend needed for GitHub Pages)
-  const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-  window.location.href = `mailto:reybetita@gmail.com?subject=${subject}&body=${body}`;
-
-  contactForm.reset();
-});
+// ===== CONTACT FORM REMOVED (Replaced with direct LinkedIn CTA) =====
 
 // ===== PARTICLE BACKGROUND =====
 const canvas = document.getElementById('particles-canvas');
@@ -242,5 +226,67 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  });
+});
+
+// ===== PROJECT CAROUSELS =====
+document.addEventListener('DOMContentLoaded', () => {
+  const projectCards = document.querySelectorAll('.project-card');
+
+  projectCards.forEach((card) => {
+    const slides = card.querySelectorAll('.project-slides .project-img');
+    if (slides.length <= 1) return; // No need for carousel if only 1 image
+
+    const prevBtn = card.querySelector('.prev-btn');
+    const nextBtn = card.querySelector('.next-btn');
+    const dots = card.querySelectorAll('.carousel-dots .dot');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      // Wrap around index
+      if (index >= slides.length) currentIndex = 0;
+      else if (index < 0) currentIndex = slides.length - 1;
+      else currentIndex = index;
+
+      // Update active slide
+      slides.forEach((slide, i) => {
+        if (i === currentIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      // Update active dot
+      dots.forEach((dot, i) => {
+        if (i === currentIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showSlide(currentIndex - 1);
+      });
+
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showSlide(currentIndex + 1);
+      });
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showSlide(i);
+      });
+    });
   });
 });
