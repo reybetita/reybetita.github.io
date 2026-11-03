@@ -1,575 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rey Noel Betita — Software Developer</title>
-  <meta name="description"
-    content="Portfolio of Rey Noel O. Betita — Software Developer specializing in building exceptional digital experiences.">
-  <meta name="author" content="Rey Noel O. Betita">
-  <meta name="keywords" content="software developer, portfolio, web development, Rey Noel Betita">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Rey Noel Betita — Software Developer">
-  <meta property="og:description" content="Building exceptional digital experiences with modern technologies.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rey Noel Betita — Software &amp; systems</title>
+  <meta name="description" content="Rey Noel Betita is a software developer in the Philippines building practical applications, automation tools, and public health information systems.">
+  <meta name="author" content="Rey Noel Betita">
+  <meta property="og:title" content="Rey Noel Betita — Software &amp; systems">
+  <meta property="og:description" content="A selection of desktop applications, public health systems, and tools for everyday work.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://reybetita.github.io">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css?v=1.0.4">
+  <meta property="og:url" content="https://reybetita.github.io/">
+  <meta property="og:image" content="https://reybetita.github.io/src/agentmode-workspace.png">
+  <meta name="theme-color" content="#f3f0e8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=2.0.0">
+  <script src="script.js?v=2.0.0" defer></script>
 </head>
-
 <body>
-
-  <!-- Particle Background Canvas -->
-  <canvas id="particles-canvas"></canvas>
-
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#" class="nav-logo">&lt;Rey /&gt;</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-toggle" id="navToggle">
-        <span></span>
-        <span></span>
-        <span></span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#home" aria-label="Rey Noel Betita, home">rey betita<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Work <span>01</span></a>
+      <a href="#about">About <span>02</span></a>
+      <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software developer / Philippines</p>
+        <h1 id="hero-title">Good software.<br>A little less<br><em>busywork.</em></h1>
+        <p class="hero-intro">I’m Rey Noel Betita. I build applications and automation tools that make everyday work easier — from public health data to the desktop.</p>
+        <a class="text-link" href="#projects">Explore selected work <span aria-hidden="true">↓</span></a>
       </div>
-    </div>
-  </nav>
+      <figure class="portrait">
+        <div class="portrait-image"><img src="profile.jpg" width="1122" height="1402" alt="Rey Noel Betita" fetchpriority="high"></div>
+        <figcaption><span>Rey Noel Betita</span><span>Developer &amp; tinkerer</span></figcaption>
+      </figure>
+      <div class="hero-foot"><span>Web applications · Desktop tools · Automation</span><a href="https://www.linkedin.com/in/reybetita" target="_blank" rel="noopener noreferrer">Let’s work together <span aria-hidden="true">↗</span></a></div>
+    </section>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-orb orb-1"></div>
-    <div class="hero-bg-orb orb-2"></div>
-    <div class="hero-bg-orb orb-3"></div>
+    <section class="work wrap" id="projects" aria-labelledby="work-title">
+      <div class="section-heading"><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Things I’ve built.</h2><p>Different problems.<br>The same practical approach.</p></div>
 
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          Available for opportunities
+      <article class="featured-project" id="agentmode">
+        <div class="project-topline"><span>Featured / Desktop application</span><span>Electron · React · TypeScript · SQLite</span></div>
+        <div class="featured-intro"><h3>AgentMode<span aria-hidden="true">↗</span></h3><p>A place to think, inspect code, and get work done. An AI development workspace that brings project context, local memory, and Git into one Windows app.</p></div>
+        <a class="project-image agentmode-image" href="src/agentmode-workspace.png" data-gallery="agentmode" aria-label="Open AgentMode screenshot"><img src="src/agentmode-workspace.png" width="1800" height="1140" alt="AgentMode showing a sample workspace, file explorer, Git history, commit actions, and conversation panel" loading="lazy"><span class="image-hint">Inspect the workspace <span aria-hidden="true">↗</span></span></a>
+        <div class="featured-bottom">
+          <p class="project-note">Application screenshot with a sample project and synthetic Git history.</p>
+          <div class="feature-list">
+            <div><h4>Context, close at hand</h4><p>Search workspace files and recall project knowledge through local memory and an interactive Brain graph.</p></div>
+            <div><h4>A review before a write</h4><p>Inspect proposed edits before applying them, with conflict checks and recovery backups.</p></div>
+            <div><h4>The tools around the code</h4><p>A Monaco editor, local terminal, Git graph, change comparisons, and bulk file staging.</p></div>
+          </div>
         </div>
-        <h1>
-          Hi, I'm <br>
-          <span class="gradient-text">Rey Noel Betita</span>
-        </h1>
-        <p class="hero-subtitle">
-          <span id="typing-text"></span><span class="cursor"></span>
-        </p>
-        <p class="hero-description">
-          A passionate software developer crafting modern, high-performance applications.
-          I turn ideas into elegant digital solutions that make a difference.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary" id="btn-view-work">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-            </svg>
-            View My Work
-          </a>
-          <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="btn btn-outline" id="btn-github">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-            </svg>
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/reybetita" target="_blank" rel="noopener" class="btn btn-outline"
-            id="btn-linkedin">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-            LinkedIn
-          </a>
-        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project" id="script-runner">
+          <a class="project-image sage" href="src/script%20runner.png" data-gallery="runner" aria-label="Open PMNP-IS Script Runner screenshot"><img src="src/script%20runner.png" width="1919" height="992" loading="lazy" alt="PMNP-IS Script Runner interface for DHIS2 data operations"><span class="image-hint">View screenshot ↗</span></a>
+          <div class="project-meta"><span>02 / Data &amp; operations</span><span>Python · Streamlit · PostgreSQL</span></div>
+          <h3>PMNP-IS Script Runner</h3><p>A working toolkit for DHIS2 household data workflows, integrity checks, and repeatable operational tasks.</p>
+        </article>
+        <article class="project" id="sab-app">
+          <a class="project-image sand" href="src/SABapp%20(3).png" data-gallery="sab" aria-label="Open SAB App screenshot gallery"><img src="src/SABapp%20(3).png" width="1919" height="991" loading="lazy" alt="SAB App point-of-sale and inventory management interface"><span class="image-hint">View 5 screenshots ↗</span></a>
+          <div class="project-meta"><span>03 / Business application</span><span>React · Node.js · SQLite</span></div>
+          <h3>SAB App</h3><p>Point-of-sale and inventory tools for day-to-day store operations, with reporting, staff management, and customer credit tracking.</p>
+        </article>
+        <article class="project" id="help-center">
+          <a class="project-image blue" href="src/helpcenter%20(1).png" data-gallery="help" aria-label="Open PMNP-ICT Help Center screenshot gallery"><img src="src/helpcenter%20(1).png" loading="lazy" alt="PMNP-ICT Help Center support ticket dashboard"><span class="image-hint">View 3 screenshots ↗</span></a>
+          <div class="project-meta"><span>04 / Technical support</span><span>Apps Script · Google Workspace</span></div>
+          <h3>PMNP-ICT Help Center</h3><p>A support ticketing workflow built around Google Workspace. Tickets live in Sheets; updates stay connected through Gmail threads.</p>
+        </article>
+        <article class="project" id="claw-machine">
+        <a class="project-image clay" href="src/clawmachine%20(1).png" data-gallery="claw" aria-label="Open Claw Machine Saga screenshot gallery"><img src="src/clawmachine%20(1).png" loading="lazy" alt="Claw Machine Saga 3D browser arcade game"><span class="image-hint">View 4 screenshots ↗</span></a>
+          <div class="project-meta"><span>05 / A change of pace</span><span>JavaScript · Three.js · PWA</span></div>
+          <h3>Claw Machine Saga</h3><p>Sometimes, I build just for the fun of it. A 3D browser arcade game with 30 levels, three worlds, and offline play.</p>
+        </article>
       </div>
+    </section>
 
-      <div class="hero-visual">
-        <div class="hero-avatar-wrapper">
-          <div class="hero-avatar-inner">
-            <img src="profile.jpg" alt="Rey Noel Betita" class="hero-avatar-img">
-          </div>
-          <div class="hero-floating-badge badge-1">
-            <span class="badge-icon">⚡</span>
-            Full-Stack Dev
-          </div>
-          <div class="hero-floating-badge badge-2">
-            <span class="badge-icon">🎯</span>
-            Problem Solver
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="about" id="about" aria-labelledby="about-title"><div class="wrap about-layout">
+      <div><p class="eyebrow">02 / Behind the work</p><h2 id="about-title">Close to the problem.<br><em>Hands on with the solution.</em></h2></div>
+      <div class="about-copy"><p>I’m a Computer Programmer III working with the Department of Health on the Philippine Multisectoral Nutrition Project Information System (PMNP-IS).</p><p>My work sits between software and operations: improving systems, automating repetitive tasks, checking data, and helping people use the tools they depend on.</p><p>I enjoy the whole process — understanding where a workflow gets stuck, building something useful, and making it easier to maintain.</p><a class="text-link" href="https://github.com/reybetita" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
+      <div class="toolbox" id="skills"><p class="eyebrow">Tools I reach for</p><dl><div><dt>Applications</dt><dd>React · Node.js · Electron · FastAPI</dd></div><div><dt>Automation</dt><dd>Python · Streamlit · Google Apps Script</dd></div><div><dt>Data &amp; integrations</dt><dd>PostgreSQL · SQLite · DHIS2 · REST APIs</dd></div><div><dt>Everyday tools</dt><dd>Git · VS Code · Postman · Ollama</dd></div></dl></div>
+    </div></section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">// About Me</p>
-        <h2 class="section-title">Get to Know Me</h2>
-        <p class="section-subtitle">Here's a snapshot of who I am and what drives my passion for technology.</p>
-      </div>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><p class="eyebrow">03 / Get in touch</p><div class="contact-heading"><h2 id="contact-title">What are you<br><em>working on?</em></h2><div><p>A web application, a messy workflow, or a tool you wish existed. I’d be glad to hear about it.</p><a class="contact-cta" href="https://www.linkedin.com/in/reybetita" target="_blank" rel="noopener noreferrer">Let’s talk on LinkedIn <span aria-hidden="true">↗</span></a><a class="email-link" href="mailto:reynoelbetita1119@gmail.com">reynoelbetita1119@gmail.com</a></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><span>© 2026 Rey Noel Betita</span><span>Built with care, in the Philippines.</span><a href="#home">Back to top ↑</a></footer>
 
-      <div class="about-grid">
-        <div class="about-image-wrapper reveal">
-          <div class="about-image-card">
-            <img src="profile.jpg" alt="Rey Noel Betita" class="about-profile-img">
-          </div>
-          <div class="about-stats">
-            <div class="about-stat">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">Projects</div>
-            </div>
-            <div class="about-stat">
-              <div class="stat-number">∞</div>
-              <div class="stat-label">Curiosity</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-text reveal reveal-delay-2">
-          <h3>Building the Future, One Line at a Time</h3>
-          <p>
-            I am a <strong>Computer Programmer III</strong> currently working with the Department of Health under the
-            Philippine Multisectoral Nutrition Project Information System (PMNP-IS). I specialize in system development,
-            automation, data processing, and technical support, with strong experience in public health information
-            systems and DHIS2 configuration.
-          </p>
-          <p>
-            My work focuses on developing system enhancements, automating workflows using Python, and improving data
-            accuracy and reporting efficiency. I am passionate about using technology to solve real-world operational
-            challenges, streamline processes, and create reliable systems that support better decision-making and public
-            service delivery.
-          </p>
-          <div class="about-tags">
-            <span class="about-tag">Python</span>
-            <span class="about-tag">React.js</span>
-            <span class="about-tag">Node.js</span>
-            <span class="about-tag">DHIS2</span>
-            <span class="about-tag">Google Apps Script</span>
-            <span class="about-tag">Automation</span>
-            <span class="about-tag">Data Processing</span>
-            <span class="about-tag">System Administration</span>
-            <span class="about-tag">Problem Solving</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">// Portfolio</p>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">A showcase of my recent work — from help desk systems to interactive web games.</p>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- Project 1 -->
-        <div class="project-card reveal">
-          <div class="project-img-wrapper">
-            <div class="project-slides">
-              <img src="src/helpcenter%20(1).png" alt="PMNP-ICT Help Center 1" class="project-img active" loading="lazy">
-              <img src="src/helpcenter%20(2).png" alt="PMNP-ICT Help Center 2" class="project-img" loading="lazy">
-              <img src="src/helpcenter%20(3).png" alt="PMNP-ICT Help Center 3" class="project-img" loading="lazy">
-            </div>
-            <button class="carousel-btn prev-btn" aria-label="Previous image">&lt;</button>
-            <button class="carousel-btn next-btn" aria-label="Next image">&gt;</button>
-            <div class="carousel-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <h3>PMNP-ICT Help Center</h3>
-          <p>An IT support ticketing system to submit, track, and resolve technical issues. Uses Google Workspace
-            integration to serve a web app, store tickets in Sheets, and manage email notifications directly within
-            Gmail threads.</p>
-          <div class="project-tech">
-            <span>Google Apps Script</span>
-            <span>Google APIs</span>
-            <span>JavaScript</span>
-            <span>Tailwind CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              Source
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-img-wrapper">
-            <div class="project-slides">
-              <img src="src/Meetrey%20(1).png" alt="AI Local Task Management 1" class="project-img active" loading="lazy">
-              <img src="src/Meetrey%20(2).png" alt="AI Local Task Management 2" class="project-img" loading="lazy">
-            </div>
-            <button class="carousel-btn prev-btn" aria-label="Previous image">&lt;</button>
-            <button class="carousel-btn next-btn" aria-label="Next image">&gt;</button>
-            <div class="carousel-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <h3>AI Local Task Management</h3>
-          <p>An AI-powered local task management system that integrates with Google services (Gmail, Calendar, Drive).
-            Features meeting transcription, intelligent data search, and an AI assistant to organize tasks and summarize
-            emails.</p>
-          <div class="project-tech">
-            <span>React.js</span>
-            <span>FastAPI</span>
-            <span>Ollama AI</span>
-            <span>Google APIs</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              Source
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-img-wrapper">
-            <div class="project-slides">
-              <img src="src/script%20runner.png" alt="PMNP-IS Script Runner" class="project-img active" loading="lazy">
-            </div>
-          </div>
-          <h3>PMNP-IS Script Runner</h3>
-          <p>A comprehensive Streamlit web application and automation suite designed to manage DHIS2 household data
-            efficiently. Connects to databases via SSH tunnels to execute bulk data modifications and integrity checks
-            directly against PostgreSQL.</p>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>Streamlit</span>
-            <span>PostgreSQL</span>
-            <span>DHIS2 API</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              Source
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card reveal reveal-delay-3">
-          <div class="project-img-wrapper">
-            <div class="project-slides">
-              <img src="src/SABapp%20(3).png" alt="SAB App 1" class="project-img active" loading="lazy">
-              <img src="src/SABapp%20(1).png" alt="SAB App 2" class="project-img" loading="lazy">
-              <img src="src/SABapp%20(2).png" alt="SAB App 3" class="project-img" loading="lazy">
-              <img src="src/SABapp%20(5).png" alt="SAB App 4" class="project-img" loading="lazy">
-              <img src="src/SABapp%20(6).png" alt="SAB App 5" class="project-img" loading="lazy">
-            </div>
-            <button class="carousel-btn prev-btn" aria-label="Previous image">&lt;</button>
-            <button class="carousel-btn next-btn" aria-label="Next image">&gt;</button>
-            <div class="carousel-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <h3>SAB App</h3>
-          <p>A complete, multi-tenant POS and inventory management system to streamline store operations. Features
-            include AI-powered product identification (vision search), staff management, automated reports, and customer
-            credit tracking.</p>
-          <div class="project-tech">
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>SQLite</span>
-            <span>Ollama AI</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              Source
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card reveal">
-          <div class="project-img-wrapper">
-            <div class="project-slides">
-              <img src="src/clawmachine%20(1).png" alt="Claw Machine Saga 1" class="project-img active" loading="lazy">
-              <img src="src/clawmachine%20(2).png" alt="Claw Machine Saga 2" class="project-img" loading="lazy">
-              <img src="src/clawmachine%20(3).png" alt="Claw Machine Saga 3" class="project-img" loading="lazy">
-              <img src="src/clawmachine%20(4).png" alt="Claw Machine Saga 4" class="project-img" loading="lazy">
-            </div>
-            <button class="carousel-btn prev-btn" aria-label="Previous image">&lt;</button>
-            <button class="carousel-btn next-btn" aria-label="Next image">&gt;</button>
-            <div class="carousel-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <h3>Claw Machine Saga</h3>
-          <p>An interactive 3D web-based arcade game where players maneuver a virtual claw to grab prizes across 30
-            levels and 3 distinct worlds. It features engaging mechanics like power-ups, time limits, and a regenerating
-            lives system, all fully playable offline.</p>
-          <div class="project-tech">
-            <span>HTML5/CSS</span>
-            <span>JavaScript</span>
-            <span>Three.js</span>
-            <span>PWA</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="project-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              Source
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">// Tech Stack</p>
-        <h2 class="section-title">Skills & Technologies</h2>
-        <p class="section-subtitle">Tools and languages I work with to bring ideas to life.</p>
-      </div>
-
-      <div class="skills-container">
-        <!-- Languages & Frameworks -->
-        <div class="skill-category reveal">
-          <div class="skill-category-icon">💻</div>
-          <h3>Languages & Frameworks</h3>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>Python</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>React.js / Node.js</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>JavaScript / HTML / CSS</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>Google Apps Script</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="85%"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Databases & APIs -->
-        <div class="skill-category reveal reveal-delay-1">
-          <div class="skill-category-icon">🗄️</div>
-          <h3>Databases & Architecture</h3>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>PostgreSQL / SQLite</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>REST APIs / FastAPI</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>DHIS2 / PMNP-IS</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="95%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>PWA Architecture</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="80%"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools & Automation -->
-        <div class="skill-category reveal reveal-delay-2">
-          <div class="skill-category-icon">⚙️</div>
-          <h3>Tools & Automation</h3>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>Streamlit / Python Automation</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="95%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>Ollama AI / AI Integration</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>Data Processing (Excel)</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name"><span class="skill-dot"></span>Git / VS Code / Postman</span>
-            <div class="skill-level">
-              <div class="skill-level-fill" data-width="90%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">// Get in Touch</p>
-        <h2 class="section-title">Let's Work Together</h2>
-        <p class="section-subtitle">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
-      </div>
-
-      <div class="contact-wrapper">
-        <div class="contact-info reveal">
-          <h3>Let's Connect</h3>
-          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something
-            amazing. Feel free to reach out!</p>
-
-          <div class="contact-links">
-            <a href="mailto:reynoelbetita1119@gmail.com" class="contact-link-item" id="contact-email">
-              <div class="contact-link-icon">📧</div>
-              <div class="contact-link-text">
-                <div class="link-label">Email</div>
-                <div class="link-value">reynoelbetita1119@gmail.com</div>
-              </div>
-            </a>
-            <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="contact-link-item"
-              id="contact-github">
-              <div class="contact-link-icon">💻</div>
-              <div class="contact-link-text">
-                <div class="link-label">GitHub</div>
-                <div class="link-value">github.com/reybetita</div>
-              </div>
-            </a>
-            <a href="https://www.linkedin.com/in/reybetita" target="_blank" rel="noopener" class="contact-link-item"
-              id="contact-linkedin">
-              <div class="contact-link-icon">💼</div>
-              <div class="contact-link-text">
-                <div class="link-label">LinkedIn</div>
-                <div class="link-value">linkedin.com/in/reybetita</div>
-              </div>
-            </a>
-            <a href="#" class="contact-link-item" id="contact-location">
-              <div class="contact-link-icon">📍</div>
-              <div class="contact-link-text">
-                <div class="link-label">Location</div>
-                <div class="link-value">Philippines</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-card reveal reveal-delay-2">
-          <div class="cta-badge">⚡ Highly Preferred</div>
-          <h3>Connect & Message</h3>
-          <p>
-            Let's build something amazing together! The best way to reach me is on <strong>LinkedIn</strong>. 
-            Connect with me today to discuss new projects, professional inquiries, or system development opportunities.
-          </p>
-          <a href="https://www.linkedin.com/in/reybetita" target="_blank" rel="noopener" class="btn btn-primary cta-button">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-            Message on LinkedIn
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-text">© 2026 Rey Noel Betita.</p>
-      <div class="footer-socials">
-        <a href="https://github.com/reybetita" target="_blank" rel="noopener" class="footer-social-link"
-          aria-label="GitHub" id="footer-github">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-          </svg>
-        </a>
-        <a href="mailto:reynoelbetita1119@gmail.com" class="footer-social-link" aria-label="Email" id="footer-email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/reybetita" target="_blank" rel="noopener" class="footer-social-link"
-          aria-label="LinkedIn" id="footer-linkedin">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js?v=1.0.4"></script>
+  <dialog class="gallery" aria-labelledby="gallery-title"><div class="gallery-header"><h2 id="gallery-title">Project screenshots</h2><button class="gallery-close" type="button" aria-label="Close gallery">Close <span aria-hidden="true">×</span></button></div><div class="gallery-stage"><img id="gallery-image" alt=""></div><div class="gallery-footer"><p id="gallery-caption" aria-live="polite"></p><div><button type="button" class="gallery-prev" aria-label="Previous screenshot">←</button><span id="gallery-count"></span><button type="button" class="gallery-next" aria-label="Next screenshot">→</button></div></div></dialog>
 </body>
-
 </html>
